@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Data viewer</title>
+        <meta charset="utf-8">
+        <meta http-equiv="origin-trial" content="Ai1/G787sugfmWtk1xQExa8N6OqwDsJyNn+OwpA1J4PozR1lixRYIQ4Tmp00vrGWS8FQQ2iDyqjwaewrOfYvPAUAAABTeyJvcmlnaW4iOiJodHRwczovL3RocmVlanMub3JnOjQ0MyIsImZlYXR1cmUiOiJXZWJYUkRldmljZU03NiIsImV4cGlyeSI6MTU2ODAyMzQ3OH0=">
+        <link href="layout/style.css?15" rel="stylesheet" type="text/css"> <!-- "?x" is used to force new download -->
+        <link rel="apple-touch-icon" sizes="57x57" href="layout/icon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="layout/icon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="layout/icon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="layout/icon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="layout/icon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="layout/icon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="layout/icon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="layout/icon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="layout/icon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="layout/icon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="layout/icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="layout/icon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="layout/icon/favicon-16x16.png">
+        <link rel="manifest" href="layout/icon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="layout/icon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+	</head>
+    
+	<body>
+        <script src="includes/HelioWebXRPolyfill.js"></script>
+
+        <!-- The loading screen. This item is created first and will be hidden after loading. -->
+        <div id="loadingBox">
+            <div id="loadingBoxInner">
+                <div id="loadingText"><img id="loadingImage" src="layout/loading.gif">  &nbsp;&nbsp;&nbsp; Loading...</div>
+                <div id="loadingBar">
+                    <div id="loadingBarInner">&nbsp;</div>
+                    <div id="loadingBarInnerStatus">&nbsp;</div>
+                </div>
+        </div>
+        </div>
+
+
+
+        <!-- Include the components of the vis tool -->
+        <!--
+        <script type="module" src="Linus.js?1"></script>
+        <script type="module" src="LinusGui.js?1"></script>
+        <script type="module" src="LinusTourController.js?1"></script>
+        <script type="module" src="LinusTourEditor.js?1"></script>-->
+        <!--<script  src="./dist/main.js"></script>-->
+     
+        <script src="./dist/main.js"></script>
+        <script>
+            console.log("hello");
+            let tourList = [];
+            /*--------------- INCLUDE CODE FOR TOURS AFTER THIS ---------------*/
+            // Uncomment the next four lines and paste the URL (within "") to the next line
+            // let generatedUrlString = "tourUrl";
+            // let urlObject = new URL(generatedUrlString)
+            // let tour = {"name": "This is a tour", "code": urlObject.searchParams.get("tour")};
+            // tourList.push(tour);
+            /*--------------- INCLUDE CODE FOR TOURS BEFORE THIS ---------------*/
+
+            let linus = new linuslib.LinusStarter(tourList);
+        </script>
+	</body>
+</html>
